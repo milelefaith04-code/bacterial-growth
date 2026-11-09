@@ -1,14 +1,10 @@
-# Bacterial growth table
-# Synthetic, educational example only.
-
 cells = 100
 hours = 0
 doubling_time = 3
 
-# 1. Print a header line like: Hour | Cells
-print("Hour|Cells")
+print(f"{'Hour':>4} | {'Cells':>6}")
 
-while hours<=24:
-    print(hours, cells)
-    hours = doubling_time + hours
-    cells = cells * 2
+while hours <= 24:
+    print(f"{hours:>4} | {cells:>6}")
+    hours += doubling_time
+    cells *= 2
